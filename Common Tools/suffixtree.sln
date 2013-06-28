@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suffixtree", "suffixtree\suffixtree.csproj", "{6557A3D7-8D7E-4978-A81B-FED58FB0CED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTests", "NUnitTests\NUnitTests.csproj", "{FFE724F8-09BE-44C4-A138-314AD4294056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuffixTreeExample", "SuffixTreeExample\SuffixTreeExample.csproj", "{B380C48D-399B-4BC3-A4D0-EC2531A136BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6557A3D7-8D7E-4978-A81B-FED58FB0CED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6557A3D7-8D7E-4978-A81B-FED58FB0CED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6557A3D7-8D7E-4978-A81B-FED58FB0CED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6557A3D7-8D7E-4978-A81B-FED58FB0CED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE724F8-09BE-44C4-A138-314AD4294056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE724F8-09BE-44C4-A138-314AD4294056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE724F8-09BE-44C4-A138-314AD4294056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE724F8-09BE-44C4-A138-314AD4294056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B380C48D-399B-4BC3-A4D0-EC2531A136BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B380C48D-399B-4BC3-A4D0-EC2531A136BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B380C48D-399B-4BC3-A4D0-EC2531A136BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B380C48D-399B-4BC3-A4D0-EC2531A136BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

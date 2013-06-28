@@ -1,0 +1,447 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{12C441C8-E3AD-4206-9EE2-6A5956F647C6}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IETGames.Shorewood</RootNamespace>
+    <AssemblyName>Leximo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v3.1</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaCrossPlatformGroupID>e67df0c3-2331-496e-a61b-56194214ba41</XnaCrossPlatformGroupID>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>
+    </Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>33D5A760609F011E87B90B8196674C9200F78598</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ShorewoodWindows_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>C:\IETGames\dep\Leximo\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarseerPhysics, Version=2.1.3.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\farseer\Windows\FarseerPhysics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=3.1.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shorewood360\Avatars\Avatar2DAnimation.cs">
+      <Link>Avatars\Avatar2DAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\BloomComponent.cs">
+      <Link>BloomComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\BloomSettings.cs">
+      <Link>BloomSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ConstantBackground.cs">
+      <Link>ConstantBackground.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\CreditsBackground.cs">
+      <Link>CreditsBackground.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\CreditsForeground.cs">
+      <Link>CreditsForeground.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Diagnostics\NormalGameplayDebugger.cs">
+      <Link>Diagnostics\NormalGameplayDebugger.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\DialogManager.cs">
+      <Link>DialogManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\CannontPurchaseWarning.cs">
+      <Link>Dialogs\CannontPurchaseWarning.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\ConfirmationPopUp.cs">
+      <Link>Dialogs\ConfirmationPopUp.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\ControllerDisconnectedPopUp.cs">
+      <Link>Dialogs\ControllerDisconnectedPopUp.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\Dialog.cs">
+      <Link>Dialogs\Dialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\DifficultyDialog.cs">
+      <Link>Dialogs\DifficultyDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\GameOverDialog.cs">
+      <Link>Dialogs\GameOverDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\HighScoresDialog.cs">
+      <Link>Dialogs\HighScoresDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\HowToPlayDialog.cs">
+      <Link>Dialogs\HowToPlayDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\MainMenuDialog.cs">
+      <Link>Dialogs\MainMenuDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\MarketPlaceConfirmation.cs">
+      <Link>Dialogs\MarketPlaceConfirmation.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\ModalDialog.cs">
+      <Link>Dialogs\ModalDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\MultiPageDialog.cs">
+      <Link>Dialogs\MultiPageDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\OptionsDialog.cs">
+      <Link>Dialogs\OptionsDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\PauseMenu.cs">
+      <Link>Dialogs\PauseMenu.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\PopUpDialog.cs">
+      <Link>Dialogs\PopUpDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Dialogs\VolumePopUp.cs">
+      <Link>Dialogs\VolumePopUp.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\FloatingPoints.cs">
+      <Link>FloatingPoints.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Fluids\FluidSolver.cs">
+      <Link>Fluids\FluidSolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Fluids\FluidSolverComponent.cs">
+      <Link>Fluids\FluidSolverComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\FoundWordAnimationRenderer.cs">
+      <Link>FoundWordAnimationRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\FreeSpellMode.cs">
+      <Link>FreeSpellMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Gameplay.cs">
+      <Link>Gameplay.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\GoalRenderer.cs">
+      <Link>GoalRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\1337Goal.cs">
+      <Link>Goals\1337Goal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\BackwardsWordCountGoal.cs">
+      <Link>Goals\BackwardsWordCountGoal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\GoalSubstring.cs">
+      <Link>Goals\GoalSubstring.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\PalindromeGoal.cs">
+      <Link>Goals\PalindromeGoal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\RandomGoalGenerator.cs">
+      <Link>Goals\RandomGoalGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\SpecificWordGoal.cs">
+      <Link>Goals\SpecificWordGoal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\WordCountGoal.cs">
+      <Link>Goals\WordCountGoal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Goals\WordScoreGoal.cs">
+      <Link>Goals\WordScoreGoal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Grid.cs">
+      <Link>Grid.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\GridRenderer.cs">
+      <Link>GridRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\GridScreenRenderer.cs">
+      <Link>GridScreenRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\IETGamesSplashScreen.cs">
+      <Link>IETGamesSplashScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\IGoal.cs">
+      <Link>IGoal.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ILetterSet.cs">
+      <Link>ILetterSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Input\Input.cs">
+      <Link>Input\Input.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Letter.cs">
+      <Link>Letter.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\LevelManager.cs">
+      <Link>LevelManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Localization\EnUsLocalization.cs">
+      <Link>Localization\EnUsLocalization.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Localization\GameStrings.cs">
+      <Link>Localization\GameStrings.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\MainMenu.cs">
+      <Link>MainMenu.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\NewGoalAnimation.cs">
+      <Link>NewGoalAnimation.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\NormalGameplay.cs">
+      <Link>NormalGameplay.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\NormalGameplayLevelManager.cs">
+      <Link>NormalGameplayLevelManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ExplosionParticleSystem.cs">
+      <Link>ParticleSystem\ExplosionParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ExplosionSmokeParticleSystem.cs">
+      <Link>ParticleSystem\ExplosionSmokeParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\FireParticleSystem.cs">
+      <Link>ParticleSystem\FireParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ParticleEmitter.cs">
+      <Link>ParticleSystem\ParticleEmitter.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ParticleSettings.cs">
+      <Link>ParticleSystem\ParticleSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ParticleSystem.cs">
+      <Link>ParticleSystem\ParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ParticleVertex.cs">
+      <Link>ParticleSystem\ParticleVertex.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\Projectile.cs">
+      <Link>ParticleSystem\Projectile.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\ProjectileTrailParticleSystem.cs">
+      <Link>ParticleSystem\ProjectileTrailParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\SmokePlumeParticleSystem.cs">
+      <Link>ParticleSystem\SmokePlumeParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ParticleSystem\UniversalParticleSystem.cs">
+      <Link>ParticleSystem\UniversalParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Physics\Chain.cs">
+      <Link>Physics\Chain.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\PopManager.cs">
+      <Link>PopManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\RecentWordsRenderer.cs">
+      <Link>RecentWordsRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ScoreBox.cs">
+      <Link>ScoreBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ScrabbleSet.cs">
+      <Link>ScrabbleSet.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Shorewood.cs">
+      <Link>Shorewood.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ShorewoodPool.cs">
+      <Link>ShorewoodPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\SoundTrack.cs">
+      <Link>SoundTrack.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\SplashScreen.cs">
+      <Link>SplashScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\StorageScreen.cs">
+      <Link>StorageScreen.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Storage\DurationComparer.cs">
+      <Link>Storage\DurationComparer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Storage\GamerEntry.cs">
+      <Link>Storage\GamerEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Storage\HighScores.cs">
+      <Link>Storage\HighScores.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Storage\ScoreEntry.cs">
+      <Link>Storage\ScoreEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Storage\Settings.cs">
+      <Link>Storage\Settings.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Storage\StorageHandler.cs">
+      <Link>Storage\StorageHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\ThreadPool\ParallelThreadPool.cs">
+      <Link>ThreadPool\ParallelThreadPool.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Threads\PredictiveTextAnalyzer.cs">
+      <Link>Threads\PredictiveTextAnalyzer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\TimerRenderer.cs">
+      <Link>TimerRenderer.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Utilities\DrawInt32SpriteBatchExtension.cs">
+      <Link>Utilities\DrawInt32SpriteBatchExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Utilities\DrawTimeSpanSpriteBatchExtension.cs">
+      <Link>Utilities\DrawTimeSpanSpriteBatchExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Utilities\Extensions.cs">
+      <Link>Utilities\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Utilities\TimerComponent.cs">
+      <Link>Utilities\TimerComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\Utilities\WordWrapper.cs">
+      <Link>Utilities\WordWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Shorewood360\WordBuilder.cs">
+      <Link>WordBuilder.cs</Link>
+    </Compile>
+    <Compile Include="PlatformDisplaySettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WordDatabaseReader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Art\GameThumbnail.png">
+      <Link>GameThumbnail.png</Link>
+    </Content>
+    <Content Include="Game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>95bfcbfb-28a1-41d3-9a5f-ba2e22146602</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.3.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common Tools\suffixtree\SuffixTree.csproj">
+      <Project>{6557A3D7-8D7E-4978-A81B-FED58FB0CED2}</Project>
+      <Name>SuffixTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomAvatarAnimation\CustomAvatarAnimationWindows.csproj">
+      <Project>{EF8868F4-AEF3-47AD-84AA-8C69D47EEF3C}</Project>
+      <Name>CustomAvatarAnimationWindows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyStorage\EasyStorage [Windows].csproj">
+      <Project>{EE24B537-62BE-4491-BE92-4E08E6F495C4}</Project>
+      <Name>EasyStorage [Windows]</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListPool\ListPoolWindows.csproj">
+      <Project>{8302A368-4D93-45B3-A345-6D54B0632DF0}</Project>
+      <Name>ListPoolWindows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShorewoodWindows_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
